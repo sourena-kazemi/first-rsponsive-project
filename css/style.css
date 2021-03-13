@@ -232,7 +232,7 @@ html{
 	font-family: roboto-bold, sans-serif;
 	background-color: #ffffff;
 	position: fixed;
-	margin: 1.5rem auto;
+	margin: .5rem auto;
 	z-index: 200;
 	width: 30%;
 	height: 550px;
@@ -952,6 +952,14 @@ input:focus :not(.form__submit-btn) {
 @media (max-width: 330px) {
 	.box__title{
 		font-size: 1rem;
+	}
+}
+
+@media (max-height: 575px) {
+	.header__sign-form{
+		height: 95%;
+		top: 2.5%;
+		overflow-y: auto;
 	}
 }
 
