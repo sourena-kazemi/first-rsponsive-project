@@ -2,6 +2,7 @@ var menu_btn = true;
 var title = document.getElementsByClassName("header__title");
 var body = document.getElementById("body")
 var media = window.matchMedia("(max-width: 400px)")
+var media_2 = window.matchMedia("(max-width: 560px)")
 
 function cancel(){
 	document.getElementById("form").style.display="none";
@@ -108,17 +109,46 @@ function menu_courses(){
 		"<li class='menu-courses__item'>XD</li>"
 }
 function menu_courses_back(){
-	document.getElementById("header__menu").innerHTML="<h4 class='menu__title' onclick='sign_up();menu()'>Sign up</h4>"+
-		"<h4 class='menu__title' onclick='sign_in();menu()'>Sign in</h4>"+
-		"<h4 class='menu__title'>Teachers</h4>"+
-		"<h4 class='menu__title' id='menu_courses-btn' onclick='menu_courses()'>Courses</h4>"
+	if (media_2.matches){
+		document.getElementById("header__menu").innerHTML="<h4 class='menu__title' onclick='sign_up();menu()'>Sign up</h4>"+
+			"<h4 class='menu__title' onclick='sign_in();menu()'>Sign in</h4>"+
+			"<h4 class='menu__title'>Teachers</h4>"+
+			"<h4 class='menu__title' id='menu_courses-btn' onclick='menu_courses()'>Courses</h4>"+
+			"<h4 class='menu__title' onclick='support_form();menu()'>Online Support</h4>"+
+			"<h4 class='menu__title' onclick='about()'>About Us</h4>"
+	}else if (media.matches){
+		document.getElementById("header__menu").innerHTML="<h4 class='menu__title' onclick='sign_up();menu()'>Sign up</h4>"+
+			"<h4 class='menu__title' onclick='sign_in();menu()'>Sign in</h4>"+
+			"<h4 class='menu__title'>Teachers</h4>"+
+			"<h4 class='menu__title' id='menu_courses-btn' onclick='menu_courses()'>Courses</h4>"+
+			"<h4 class='menu__title' onclick='about()'>About Us</h4>"
+	}else {
+		document.getElementById("header__menu").innerHTML="<h4 class='menu__title' onclick='sign_up();menu()'>Sign up</h4>"+
+			"<h4 class='menu__title' onclick='sign_in();menu()'>Sign in</h4>"+
+			"<h4 class='menu__title'>Teachers</h4>"+
+			"<h4 class='menu__title' id='menu_courses-btn' onclick='menu_courses()'>Courses</h4>"
+	}
 }
 function menu_about_back(){
-	document.getElementById("header__menu").innerHTML="<h4 class='menu__title' onclick='sign_up();menu()'>Sign up</h4>"+
-		"<h4 class='menu__title' onclick='sign_in();menu()'>Sign in</h4>"+
-		"<h4 class='menu__title'>Teachers</h4>"+
-		"<h4 class='menu__title' id='menu_courses-btn' onclick='menu_courses()'>Courses</h4>"+
-		"<h4 class='menu__title' onclick='about()'>About Us</h4>"
+	if (media_2.matches){
+		document.getElementById("header__menu").innerHTML="<h4 class='menu__title' onclick='sign_up();menu()'>Sign up</h4>"+
+			"<h4 class='menu__title' onclick='sign_in();menu()'>Sign in</h4>"+
+			"<h4 class='menu__title'>Teachers</h4>"+
+			"<h4 class='menu__title' id='menu_courses-btn' onclick='menu_courses()'>Courses</h4>"+
+			"<h4 class='menu__title' onclick='support_form();menu()'>Online Support</h4>"+
+			"<h4 class='menu__title' onclick='about()'>About Us</h4>"
+	}else if (media.matches){
+		document.getElementById("header__menu").innerHTML="<h4 class='menu__title' onclick='sign_up();menu()'>Sign up</h4>"+
+			"<h4 class='menu__title' onclick='sign_in();menu()'>Sign in</h4>"+
+			"<h4 class='menu__title'>Teachers</h4>"+
+			"<h4 class='menu__title' id='menu_courses-btn' onclick='menu_courses()'>Courses</h4>"+
+			"<h4 class='menu__title' onclick='about()'>About Us</h4>"
+	}else {
+		document.getElementById("header__menu").innerHTML="<h4 class='menu__title' onclick='sign_up();menu()'>Sign up</h4>"+
+			"<h4 class='menu__title' onclick='sign_in();menu()'>Sign in</h4>"+
+			"<h4 class='menu__title'>Teachers</h4>"+
+			"<h4 class='menu__title' id='menu_courses-btn' onclick='menu_courses()'>Courses</h4>"
+	}
 }
 function about(){
 	document.getElementById("header__menu").innerHTML= "<p class='menu-courses__back-btn' onclick='menu_about_back()'>Back</p>" +
