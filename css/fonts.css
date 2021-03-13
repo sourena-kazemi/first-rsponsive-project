@@ -1,0 +1,24 @@
+@font-face {
+	font-family: honey;
+	src: url("../files/fonts/honey_script/HoneyScript-SemiBold.woff2"),
+	url("../files/fonts/honey_script/HoneyScript-SemiBold.woff"),
+	url("../files/fonts/honey_script/HoneyScript-SemiBold.ttf");
+}
+@font-face {
+	font-family: roboto-bold;
+	src: url("../files/fonts/Roboto/bold/Roboto-Bold.woff2"),
+	url("../files/fonts/Roboto/bold/Roboto-Bold.woff"),
+	url("../files/fonts/Roboto/bold/Roboto-Bold.ttf");
+}
+@font-face {
+	font-family: roboto-regular;
+	src: url("../files/fonts/Roboto/regular/Roboto-Regular.woff2"),
+	url("../files/fonts/Roboto/regular/Roboto-Regular.woff"),
+	url("../files/fonts/Roboto/regular/Roboto-Regular.ttf");
+}
+@font-face {
+	font-family: xolonium;
+	src: url("../files/fonts/xolonium/Xolonium-Regular.woff2"),
+	url("../files/fonts/xolonium/Xolonium-Regular.woff"),
+	url("../files/fonts/xolonium/Xolonium-Regular.ttf");
+}

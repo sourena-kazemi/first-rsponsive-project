@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="javascript/index.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="files/images/icons8-circle-64.png">
+	<meta charset="utf-8">
+	<meta name="description" content="This Website Is The Programming Learning & Teaching Site!
+	Learn Programming With Us.">
+	<meta name="keywords" content="programming,learning,coding,c,c++,c#,php,python,html,css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<title>My First Project</title>
+</head>
+<body id="body">
+
+<div class="header__menu" id="header__menu">
+	<h4 class="menu__title" onclick="cancel();sign_up();menu()">Sign up</h4>
+	<h4 class="menu__title"  onclick="cancel();sign_in();menu()">Sing in</h4>
+	<h4 class="menu__title">Teachers</h4>
+	<h4 class="menu__title" id="menu_courses-btn" onclick="menu_courses()">Courses</h4>
+	<h4 class="menu__title" onclick="support_form();menu()">Online Support</h4>
+	<h4 class="menu__title" onclick="about()">About Us</h4>
+</div>
+
+<header class="header">
+    <!--navbar-->
+	<nav class="header__nav-bar">
+
+		<div class="nav__items-box">
+
+			<div class="header__menu-btn" id="header__menu-btn" onclick="menu()">
+				<div class="menu__row1" id="row1"></div>
+				<div class="menu__row2" id="row2"></div>
+				<div class="menu__row3" id="row3"></div>
+			</div>
+
+			<div class="header__item link1"><a href="#" class="header__link header-about"><span class="link--first-letter">A</span>bout</a></div>
+			<div class="header__item link2" onclick="cancel();sign_in()"><a href="#" class="header__link sign__btn"><span class="link--first-letter">S</span>ign in</a></div>
+			<div class="header__item link3" onclick="cancel();sign_up()"><a href="#" class="header__link sign__btn"><span class="link--first-letter">S</span>ign up</a></div>
+			<!--signup and sign in form-->
+			<div  class="header__sign-form" id="form">
+				<form>
+					<a href="#" class="sign-form__logo-link">
+						<img src="files/images/icons8-circle-64.png" alt="logo" class="sign-form__logo">
+					</a>
+					<h3 id="sign-in-title">Sign In</h3>
+					<label id="email-sign-in-label">Email:
+						<input type="email" placeholder="example@gmail.com" required id="email-sign-in">
+					</label><br>
+					<label id="password-sign-in-label">Password:
+						<input type="password" placeholder="Your Password" required id="password-sign-in">
+					</label><br>
+					<h3 id="sign-up-title">Sign Up</h3>
+					<label id="email-sign-up-label">Email:
+						<input type="email" placeholder="example@gmail.com" required id="email-sign-up">
+					</label><br>
+					<label id="password-sign-up-label">Password:
+						<input type="password" placeholder="Your Password" required id="password-sign-up">
+					</label><br>
+					<label id="username-sign-up-label">User Name:
+						<input type="text" placeholder="Your User Name" required id="username-sign-up">
+					</label><br>
+					<label class="sign-form__label">Agree to Our Terms
+						<input type="checkbox" class="form__agree-btn" required>
+					</label>
+					<input type="submit" value="Send" class="form__submit-btn">
+				</form>
+				<button id="cancel" onclick="cancel()">Cancel</button>
+			</div>
+			<div class="header__item link4"><a href="#" class="header__link"><span class="link--first-letter">C</span>ourses</a>
+			<!--courses box-->
+			<div class="courses">
+				<div class="courses__items-box">
+					<ul>Web
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Java Script</li>
+						<li>PHP</li>
+					</ul>
+					<ul>C
+						<li>C</li>
+						<li>C#</li>
+						<li>C++</li>
+					</ul>
+					<ul>Graphic
+						<li>Photo Shop</li>
+						<li>XD</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			<h1 class="header__title" id="title">Welcome To Learning Center</h1>
+			<div class="header__item link5"><a href="#" class="header__link header-teachers"><span class="link--first-letter">T</span>eachers</a></div>
+		</div>
+		<a href="#" class="header__logo-link">
+			<img src="files/images/icons8-circle-64.png" alt="logo" class="header__logo">
+		</a>
+
+	</nav>
+	<div class="header__bg-box"><p>Knowledge Is Power</p></div>
+</header>
+
+
+<main class="main">
+	<section class="main__boxes">
+		<section class="main__box box1">
+			<img src="files/images/icons8-school-96.png" alt="logo" class="box__logo">
+			<h3 class="box__title">Learn Easy With Us!</h3>
+			<p class="box__text">
+				We Have a Lot of Courses For You <br>To Learn Programming Easy.<br>
+				<a href="#" class="main__box__btn">Start Learning</a>
+			</p>
+		</section>
+		<section class="main__box box2">
+			<img src="files/images/icons8-increase-96.png" alt="logo" class="box__logo">
+			<h3 class="box__title">Fast Progress With Us!</h3>
+			<p class="box__text">
+				We Have The best Courses and Teachers For You.<br>
+				<a href="#" class="main__box__btn">Courses</a>
+			</p>
+		</section>
+		<section class="main__box box3">
+			<img src="files/images/icons8-faq-96.png" alt="logo" class="box__logo">
+			<h3 class="box__title">Q&A system!</h3>
+			<p class="box__text">
+				Use The Q&A System to Get Your Answer Quickly.<br>
+				<a href="#" class="main__box__btn">Q&A system</a>
+			</p>
+		</section>
+		<section class="main__box box4">
+			<img src="files/images/icons8-online-support-64.png" alt="logo" class="box__logo box4__logo">
+			<h3 class="box__title">Online Support!</h3>
+			<p class="box__text">
+				We Have The Online Support For Solve Your Problem.<br>
+				<a href="#" class="main__box__btn" onclick="support_form()">Online Support</a>
+			</p>
+		</section>
+	</section>
+</main>
+
+<div class="online-support">
+	<div id="online-support__box">
+		<form class="online-support__box">
+			<section class="online-support__row1">
+				<h4 class="online-support__title">Hello!What Is Your Problem?</h4>
+				<img src="files/images/icons8-macos-close-60.png" alt="close" class="online-support__close" id="online-support__close" onclick="support_close()">
+			</section>
+			<section class="online-support__row2">
+				<label>
+					<input type="text" placeholder="     Type Your Massage" class="online-support__typing-box">
+				</label>
+				<img src="files/images/icons8-email-send-96.png" alt="send" class="online-support__send-btn">
+			</section>
+		</form>
+	</div>
+	<img src="files/images/icons8-online-support-64.png" alt="support" class="online-support__btn" id="online-support__btn" onclick="support_form()">
+</div>
+
+<footer class="footer">
+	<section class="footer__about">
+		<h3 class="footer-about__title">About Us</h3>
+		<p class="footer-about__text">We Are a Team That Provides Programming<br>
+			Training For You and Strives to Bring You to<br>
+			The Best Level of Programming.</p>
+	</section>
+	<section class="footer__contact">
+		<img src="files/images/icons8-facebook-96.png" alt="logo" class="contact__logo">
+		<img src="files/images/icons8-telegram-app-96.png" alt="logo" class="contact__logo">
+		<img src="files/images/icons8-instagram-96.png" alt="logo" class="contact__logo">
+		<img src="files/images/icons8-google-plus-96.png" alt="logo" class="contact__logo">
+	</section>
+	<section class="footer__links">
+		<a href="#" class="footer-links__link">Blog</a>
+		<a href="#" class="footer-links__link">Q&A</a>
+		<a href="#" class="footer-links__link">Help</a>
+	</section>
+</footer>
+
+
+</body>
+</html>
