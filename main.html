@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script src="javascript/index.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<meta name="description" content="This Website Is The Programming Learning & Teaching Site!
@@ -16,11 +15,12 @@
 	<meta property="og:locale" content="en">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="icon" href="files/images/icons8-circle-64.png">
 	<link rel="shortcut icon" href="files/images/icons8-circle-64.png">
 	<title>My First Project</title>
 </head>
-<body id="body">
+<body id="body" style="overflow-x: hidden">
 
 <div class="header__menu" id="header__menu">
 	<h4 class="menu__title" onclick="cancel();sign_up();menu()">Sign up</h4>
@@ -33,7 +33,7 @@
 
 <header class="header">
     <!--navbar-->
-	<nav class="header__nav-bar">
+	<nav class="header__nav-bar wow animate__animated animate__flipInX" data-wow-duration="1s">
 
 		<div class="nav__items-box">
 
@@ -43,9 +43,9 @@
 				<div class="menu__row3" id="row3"></div>
 			</div>
 
-			<div class="header__item link1"><a href="#" class="header__link header-about"><span class="link--first-letter">A</span>bout</a></div>
-			<div class="header__item link2" onclick="cancel();sign_in()"><a href="#" class="header__link sign__btn"><span class="link--first-letter">S</span>ign in</a></div>
-			<div class="header__item link3" onclick="cancel();sign_up()"><a href="#" class="header__link sign__btn"><span class="link--first-letter">S</span>ign up</a></div>
+			<div class="header__item link1 wow animate__animated animate__pulse" data-wow-delay="1s"><a href="#" class="header__link header-about"><span class="link--first-letter">A</span>bout</a></div>
+			<div class="header__item link2 wow animate__animated animate__pulse" data-wow-delay="1s" onclick="cancel();sign_in()"><a href="#" class="header__link sign__btn"><span class="link--first-letter">S</span>ign in</a></div>
+			<div class="header__item link3 wow animate__animated animate__pulse" data-wow-delay="1s" onclick="cancel();sign_up()"><a href="#" class="header__link sign__btn"><span class="link--first-letter">S</span>ign up</a></div>
 			<!--signup and sign in form-->
 			<div  class="header__sign-form" id="form">
 				<form>
@@ -76,7 +76,7 @@
 				</form>
 				<button id="cancel" onclick="cancel()">Cancel</button>
 			</div>
-			<div class="header__item link4"><a href="#" class="header__link"><span class="link--first-letter">C</span>ourses</a>
+			<div class="header__item link4 wow animate__animated animate__pulse" data-wow-delay="1s"><a href="#" class="header__link"><span class="link--first-letter">C</span>ourses</a>
 			<!--courses box-->
 			<div class="courses">
 				<div class="courses__items-box">
@@ -98,21 +98,21 @@
 				</div>
 			</div>
 			</div>
-			<h1 class="header__title" id="title">Welcome To Learning Center</h1>
-			<div class="header__item link5"><a href="#" class="header__link header-teachers"><span class="link--first-letter">T</span>eachers</a></div>
+			<h1 class="header__title wow animate__animated animate__fadeIn" data-wow-delay="1s" id="title">Welcome To Learning Center</h1>
+			<div class="header__item link5 wow animate__animated animate__pulse" data-wow-delay="1s"><a href="#" class="header__link header-teachers"><span class="link--first-letter">T</span>eachers</a></div>
 		</div>
-		<a href="#" class="header__logo-link">
+		<a href="#" class="header__logo-link wow animate__animated animate__slideInDown" data-wow-delay="1s">
 			<img src="files/images/icons8-circle-64.png" alt="logo" class="header__logo">
 		</a>
 
 	</nav>
-	<div class="header__bg-box"><p>Knowledge Is Power</p></div>
+	<div class="header__bg-box"><p class="wow animate__animated animate__fadeIn" data-wow-delay="1s">Knowledge Is Power</p></div>
 </header>
 
 
-<main class="main">
+<main class="main" style="overflow-x: hidden">
 	<section class="main__boxes">
-		<section class="main__box box1">
+		<section class="main__box box1 wow animate__animated animate__bounceInLeft">
 			<img src="files/images/icons8-school-96.png" alt="logo" class="box__logo">
 			<h3 class="box__title">Learn Easy With Us!</h3>
 			<p class="box__text">
@@ -120,7 +120,7 @@
 				<a href="#" class="main__box__btn">Start Learning</a>
 			</p>
 		</section>
-		<section class="main__box box2">
+		<section class="main__box box2 wow animate__animated animate__bounceInRight">
 			<img src="files/images/icons8-increase-96.png" alt="logo" class="box__logo">
 			<h3 class="box__title">Fast Progress With Us!</h3>
 			<p class="box__text">
@@ -128,7 +128,7 @@
 				<a href="#" class="main__box__btn">Courses</a>
 			</p>
 		</section>
-		<section class="main__box box3">
+		<section class="main__box box3 wow animate__animated animate__bounceInLeft">
 			<img src="files/images/icons8-faq-96.png" alt="logo" class="box__logo">
 			<h3 class="box__title">Q&A system!</h3>
 			<p class="box__text">
@@ -136,7 +136,7 @@
 				<a href="#" class="main__box__btn">Q&A system</a>
 			</p>
 		</section>
-		<section class="main__box box4">
+		<section class="main__box box4 wow animate__animated animate__bounceInRight">
 			<img src="files/images/icons8-online-support-64.png" alt="logo" class="box__logo box4__logo">
 			<h3 class="box__title">Online Support!</h3>
 			<p class="box__text">
@@ -165,26 +165,32 @@
 	<img src="files/images/icons8-online-support-64.png" alt="support" class="online-support__btn" id="online-support__btn" onclick="support_form()">
 </div>
 
-<footer class="footer">
+<footer class="footer" style="overflow-y: hidden">
 	<section class="footer__about">
-		<h3 class="footer-about__title">About Us</h3>
-		<p class="footer-about__text">We Are a Team That Provides Programming<br>
+		<h3 class="footer-about__title wow animate__animated animate__fadeInLeft">About Us</h3>
+		<p class="footer-about__text wow animate__animated animate__fadeInLeft">We Are a Team That Provides Programming<br>
 			Training For You and Strives to Bring You to<br>
 			The Best Level of Programming.</p>
 	</section>
 	<section class="footer__contact">
-		<img src="files/images/icons8-facebook-96.png" alt="logo" class="contact__logo">
-		<img src="files/images/icons8-telegram-app-96.png" alt="logo" class="contact__logo">
-		<img src="files/images/icons8-instagram-96.png" alt="logo" class="contact__logo">
-		<img src="files/images/icons8-google-plus-96.png" alt="logo" class="contact__logo">
+		<img src="files/images/icons8-facebook-96.png" alt="logo" class="contact__logo wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+		<img src="files/images/icons8-telegram-app-96.png" alt="logo" class="contact__logo wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+		<img src="files/images/icons8-instagram-96.png" alt="logo" class="contact__logo wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+		<img src="files/images/icons8-google-plus-96.png" alt="logo" class="contact__logo wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
 	</section>
 	<section class="footer__links">
-		<a href="#" class="footer-links__link">Blog</a>
-		<a href="#" class="footer-links__link">Q&A</a>
-		<a href="#" class="footer-links__link">Help</a>
+		<a href="#" class="footer-links__link wow animate__animated animate__fadeInRight">Blog</a>
+		<a href="#" class="footer-links__link wow animate__animated animate__fadeInRight">Q&A</a>
+		<a href="#" class="footer-links__link wow animate__animated animate__fadeInRight">Help</a>
 	</section>
 </footer>
 
 
 </body>
+
+<script src="javascript/index.js"></script>
+<script src="javascript/wow.js"></script>
+<script>
+	new WOW().init();
+</script>
 </html>
